@@ -16,15 +16,15 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-            buildConfigField 'String', 'BASE_URL', '"http://47.102.50.54:9999/"'
-            buildConfigField 'String', 'DOMAIN1', '"app-0-8-auth"'
-            buildConfigField 'String', 'DOMAIN2', '"app-0-8-sk"'
+            buildConfigField 'String', 'BASE_URL', '"releas_base_url"'
+            buildConfigField 'String', 'DOMAIN1', '"release_domain1"'
+            buildConfigField 'String', 'DOMAIN2', '"release_domain2"'
         }
 
         debug {
-            buildConfigField 'String', 'BASE_URL', '"http://47.102.50.54:9999/"'
-            buildConfigField 'String', 'DOMAIN1', '"app-0-8-auth"'
-            buildConfigField 'String', 'DOMAIN2', '"app-0-8-sk"'
+            buildConfigField 'String', 'BASE_URL', '"debug_base_url"'
+            buildConfigField 'String', 'DOMAIN1', '"debug_domain1"'
+            buildConfigField 'String', 'DOMAIN2', '"dbbug_domain2"'
         }
     }
 
