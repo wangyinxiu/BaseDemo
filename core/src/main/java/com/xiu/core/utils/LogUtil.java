@@ -3,7 +3,7 @@ package com.xiu.core.utils;
 import android.util.Log;
 
 import com.google.gson.Gson;
-import com.xiu.core.Config;
+import com.xiu.core.BuildConfig;
 
 public class LogUtil {
 
@@ -11,37 +11,37 @@ public class LogUtil {
 
 
     public static void v(String tag, String msg) {
-        if (Config.LOG_ENABLE) {
+        if (BuildConfig.LOG_ENABLE) {
             Log.v(TAG, tag + " --> " + msg);
         }
     }
 
     public static void d(String tag, String msg) {
-        if (Config.LOG_ENABLE) {
+        if (BuildConfig.LOG_ENABLE) {
             Log.d(TAG, tag + " --> " + msg);
         }
     }
 
     public static void i(String tag, String msg) {
-        if (Config.LOG_ENABLE) {
+        if (BuildConfig.LOG_ENABLE) {
             Log.i(TAG, tag + " --> " + msg);
         }
     }
 
     public static void w(String tag, String msg) {
-        if (Config.LOG_ENABLE) {
+        if (BuildConfig.LOG_ENABLE) {
             Log.w(TAG, tag + " --> " + msg);
         }
     }
 
     public static void e(String tag, String msg) {
-        if (Config.LOG_ENABLE) {
+        if (BuildConfig.LOG_ENABLE) {
             Log.e(TAG, tag + " --> " + msg);
         }
     }
 
     public static void o(Object obj) {
-        if (Config.LOG_ENABLE) {
+        if (BuildConfig.LOG_ENABLE) {
             String msg = null;
             if (obj == null) {
                 msg = "Http:next --> object is null";
@@ -54,7 +54,7 @@ public class LogUtil {
     }
 
     public static void e(Throwable e) {
-        if (Config.LOG_ENABLE) {
+        if (BuildConfig.LOG_ENABLE) {
             Log.e(TAG, "Http:error --> " + e.getMessage());
         }
     }

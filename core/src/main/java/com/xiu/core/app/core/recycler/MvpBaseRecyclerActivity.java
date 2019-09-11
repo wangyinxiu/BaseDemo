@@ -10,7 +10,6 @@ import android.widget.FrameLayout;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
 import com.scwang.smartrefresh.layout.listener.OnRefreshLoadMoreListener;
-import com.xiu.core.Config;
 import com.xiu.core.R;
 import com.xiu.core.app.adapter.CoreAdapter;
 import com.xiu.core.app.mvp.MvpActivity;
@@ -18,6 +17,8 @@ import com.xiu.core.app.mvp.MvpActivity;
 import java.util.List;
 
 public abstract class MvpBaseRecyclerActivity<T, A extends CoreAdapter<T>, V extends MvpBaseRecyclerView<T>, P extends MvpBaseRecyclerPresenter<V>> extends MvpActivity<V, P> implements MvpBaseRecyclerView<T> {
+
+    private static final int DEFAULT_TIME_OUT = 30;
 
     private A adapter;
     private int currentPage = 0;
@@ -107,7 +108,7 @@ public abstract class MvpBaseRecyclerActivity<T, A extends CoreAdapter<T>, V ext
     }
 
     public int setTimeOut() {
-        return Config.DEFAULT_TIME_OUT;
+        return DEFAULT_TIME_OUT;
     }
 
 

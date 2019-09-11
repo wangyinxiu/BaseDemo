@@ -7,7 +7,7 @@ import com.xiu.core.app.adapter.CorePagerAdapter;
 import com.xiu.core.app.core.pager.MvpBasePagerActivity;
 import com.xiu.core.app.core.pager.MvpBasePagerPresenter;
 import com.xiu.core.app.core.pager.MvpBasePagerView;
-import com.xiu.core.view.buildins.commonnavigator.CommonNavigator;
+import com.xiu.core.view.magicindicator.buildins.commonnavigator.CommonNavigator;
 
 import java.util.ArrayList;
 import java.util.List;
