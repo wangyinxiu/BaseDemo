@@ -1,4 +1,4 @@
-package xiu.neusoft.com.base.test;
+package com.xiu.base.test;
 
 import android.widget.Toast;
 

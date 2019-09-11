@@ -1,7 +1,8 @@
-package xiu.neusoft.com.base.test;
+package com.xiu.base.test;
 
 import android.support.annotation.NonNull;
 
+import com.xiu.base.R;
 import com.xiu.core.app.adapter.CorePagerAdapter;
 import com.xiu.core.app.core.pager.MvpBasePagerActivity;
 import com.xiu.core.app.core.pager.MvpBasePagerPresenter;
@@ -11,7 +12,6 @@ import com.xiu.core.view.buildins.commonnavigator.CommonNavigator;
 import java.util.ArrayList;
 import java.util.List;
 
-import xiu.neusoft.com.base.R;
 
 public class TestPagerActivity extends MvpBasePagerActivity<MvpBasePagerView,
         MvpBasePagerPresenter<MvpBasePagerView>> implements MvpBasePagerView {

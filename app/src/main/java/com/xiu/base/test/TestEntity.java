@@ -1,4 +1,4 @@
-package xiu.neusoft.com.base.test;
+package com.xiu.base.test;
 
 public class TestEntity {
     private String name = "http://pic.rmb.bdstatic.com/f54083119edfb83c4cfe9ce2eeebc076.jpeg";

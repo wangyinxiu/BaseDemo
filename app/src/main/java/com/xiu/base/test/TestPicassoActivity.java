@@ -1,4 +1,4 @@
-package xiu.neusoft.com.base.test;
+package com.xiu.base.test;
 
 import com.xiu.core.app.core.CoreActivity;
 

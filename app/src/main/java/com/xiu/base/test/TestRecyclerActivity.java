@@ -1,10 +1,11 @@
-package xiu.neusoft.com.base.test;
+package com.xiu.base.test;
 
 import android.support.annotation.NonNull;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
+import com.xiu.base.R;
 import com.xiu.core.app.core.recycler.MvpBaseRecyclerActivity;
 import com.xiu.core.app.core.recycler.MvpBaseRecyclerPresenter;
 import com.xiu.core.app.core.recycler.MvpBaseRecyclerView;
@@ -12,7 +13,6 @@ import com.xiu.core.app.core.recycler.MvpBaseRecyclerView;
 import java.util.ArrayList;
 import java.util.List;
 
-import xiu.neusoft.com.base.R;
 
 
 public class TestRecyclerActivity extends MvpBaseRecyclerActivity<TestEntity, TestCoreAdapter,

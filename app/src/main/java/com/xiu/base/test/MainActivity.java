@@ -1,9 +1,10 @@
-package xiu.neusoft.com.base.test;
+package com.xiu.base.test;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 
+import com.xiu.base.R;
 import com.xiu.core.app.core.CoreActivity;
 import com.xiu.core.app.dialog.AppAlertDialog;
 import com.xiu.core.app.dialog.AppToastDialog;
@@ -16,7 +17,6 @@ import com.xiu.network.datamodel.DemoDataModel;
 import java.util.List;
 
 import io.reactivex.observers.DisposableObserver;
-import xiu.neusoft.com.base.R;
 
 public class MainActivity extends CoreActivity {
 

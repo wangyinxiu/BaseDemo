@@ -1,11 +1,11 @@
-package xiu.neusoft.com.base.test;
+package com.xiu.base.test;
 
 import com.squareup.picasso.Picasso;
+import com.xiu.base.R;
 import com.xiu.core.app.adapter.CoreAdapter;
 import com.xiu.core.app.adapter.Holder;
 import com.xiu.core.app.core.CoreActivity;
 
-import xiu.neusoft.com.base.R;
 
 public class TestCoreAdapter extends CoreAdapter<TestEntity> {
 

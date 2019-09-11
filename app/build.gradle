@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "xiu.neusoft.com.base"
+        applicationId "com.xiu.base"
         minSdkVersion 21
         targetSdkVersion 27
         versionCode 1

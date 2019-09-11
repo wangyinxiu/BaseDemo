@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="xiu.neusoft.com.base">
+    package="com.xiu.base">
 
     <application
         android:name="com.xiu.core.app.XApplication"
@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".test.TestPagerActivity"></activity>
+        <activity android:name="M"></activity>
         <activity android:name=".test.TestRecyclerActivity" />
         <activity android:name=".test.MainActivity">
             <intent-filter>
