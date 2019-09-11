@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="LinearLayout">
+
+    </style>
+
+    <style name="LinearLayout.Vertical" parent="LinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="LinearLayout.Vertical.Padding" parent="LinearLayout.Vertical">
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="LinearLayout.Vertical.Margin" parent="LinearLayout.Vertical">
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+    </style>
+
+
+    <style name="LinearLayout.ButtonWhite" parent="LinearLayout.Vertical.Margin">
+        <item name="android:background">@drawable/rectangle_white_corners_8</item>
+    </style>
+
+</resources>

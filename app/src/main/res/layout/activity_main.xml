@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0f0">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" android:orientation="vertical">
+
+           <Button
+               android:id="@+id/test_net_request"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:text="test net request"
+               />
+
+
+           <Button
+               android:id="@+id/clear_image_cache"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:text="clear image cache"
+               />
+
+           <Button
+               android:id="@+id/clear_string_to_sp_cache"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:text="clear String to sp cache"
+               />
+
+           <Button
+               android:id="@+id/get_string_to_sp_cache"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:text="get String to sp cache"
+               />
+
+           <Button
+               android:id="@+id/put_string_to_sp_cache"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:text="put String to sp cache"
+               />
+
+
+           <Button
+               android:id="@+id/btn_test_alert_dialog"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:text="test alert dialog"/>
+
+           <Button
+               android:id="@+id/btn_test_tip_dialog"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:text="test tip dialog"/>
+
+           <Button
+               android:id="@+id/btn_test_recycler_activity"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:text="test recycler activity" />
+
+           <Button
+               android:id="@+id/btn_test_pager_activity"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:text="test pager activity" />
+
+       </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tab_test">
+        <item>tab0</item>
+        <item>tab1</item>
+        <item>tab2</item>
+        <item>tab3</item>
+    </string-array>
+
+
+    <string-array name="images">
+        <item>http://pic.rmb.bdstatic.com/f54083119edfb83c4cfe9ce2eeebc076.jpeg</item>
+        <item>http://photocdn.sohu.com/20130925/Img387224863.jpg</item>
+        <item>http://www.leawo.cn/attachment/201404/16/1433365_1397624557Bz7w.jpg</item>
+        <item>http://img.sccnn.com/bimg/337/23662.jpg</item>
+        <item>http://static01.lvye.com/portal/201604/28/093110pb7151d134r1rvet.jpg</item>
+        <item>http://pic1.nipic.com/2008-12-05/200812584425541_2.jpg</item>
+        <item>http://img0.ph.126.net/CXbGJWqudtgL0yTBsmjMZA==/1105633708537445535.jpg</item>
+        <item>http://pic8.nipic.com/20100713/1954049_091647155567_2.jpg</item>
+        <item>http://pic53.nipic.com/file/20141105/18505720_101842720000_2.jpg</item>
+        <item>http://pic31.nipic.com/20130724/3822951_160056763000_2.jpg</item>
+        <item>http://pic25.nipic.com/20121101/6443349_134030781000_2.jpg</item>
+        <item>http://pic170.nipic.com/file/20180625/11949215_162115287000_2.jpg</item>
+        <item>http://i9.hexun.com/2018-11-24/195299307.jpg</item>
+        <item>http://img.mp.itc.cn/upload/20160429/5a092790715d45b2a9734e848be3f665_th.jpg</item>
+        <item>http://img.mp.itc.cn/upload/20160830/fe779ac6f79d4fb2a8101fda35eb8bdd_th.jpg</item>
+        <item>http://efile.kaoyan.com/img/2015/09/09/114659_55efabb3943c9.jpg</item>
+        <item>http://pic26.nipic.com/20130111/10210900_130928713127_2.jpg</item>
+        <item>http://img.sccnn.com/bimg/337/28719.jpg</item>
+        <item>http://pic22.nipic.com/20120626/7755371_230304612000_2.jpg</item>
+        <item>http://img0.ph.126.net/CB41UcBHGyfzPwchTkt1Aw==/3185170836557800152.jpg</item>
+        <item>http://pic15.nipic.com/20110815/8002769_082424424381_2.jpg</item>
+        <item>http://pic8.nipic.com/20100714/668573_205514091103_2.jpg</item>
+        <item>http://pic23.nipic.com/20120831/10841156_103429613106_2.jpg</item>
+        <item>http://img26.hc360.cn/26/busin/173/086/b/26-173086496.jpg</item>
+        <item>http://pic11.nipic.com/20101208/818468_074136201102_2.jpg</item>
+
+    </string-array>
+</resources>
