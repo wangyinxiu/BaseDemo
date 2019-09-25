@@ -131,6 +131,9 @@ public class FileUtil {
 
     public static void deleteDir(String path) {
         File dir = new File(path);
+        if(!dir.exists()){
+            return;
+        }
         File[] files = dir.listFiles();
         for (File file : files) {
             if (file.isDirectory()) {
