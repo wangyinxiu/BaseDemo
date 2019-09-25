@@ -1,4 +1,4 @@
-package com.xiu.data.core;
+package com.xiu.data;
 
 import android.content.Context;
 import android.content.IntentFilter;
@@ -8,6 +8,12 @@ import android.os.Binder;
 
 
 import com.xiu.data.bean.response.Information;
+import com.xiu.data.core.Cache;
+import com.xiu.data.core.DaoManager;
+import com.xiu.data.core.Network;
+import com.xiu.data.core.NetworkReceiver;
+import com.xiu.data.core.NetworkUtil;
+import com.xiu.data.core.OnNetStateChangedListener;
 import com.xiu.data.datamodel.DemoDataModel;
 import com.xiu.utils.LogUtil;
 

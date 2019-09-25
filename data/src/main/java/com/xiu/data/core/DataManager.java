@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
 
+import com.xiu.data.DataBinder;
 import com.xiu.utils.LogUtil;
 
 
