@@ -1,14 +1,11 @@
 package com.xiu.core.manager;
 
-import android.app.Dialog;
 import android.content.DialogInterface;
 
-import com.xiu.core.app.core.CoreActivity;
 import com.xiu.core.app.dialog.CoreDialog;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
 public class CoreDialogManager implements DialogInterface.OnDismissListener {
 

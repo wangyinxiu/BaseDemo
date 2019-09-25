@@ -24,7 +24,7 @@ public abstract class MvpBaseRecyclerFragment<T, A extends CoreAdapter<T>, V ext
     private static final int DEFAULT_TIME_OUT = 30;
 
     private A adapter;
-    private int page;
+    private int page = 1;
     private SmartRefreshLayout refreshLayout;
     private View empty;
 
@@ -53,7 +53,7 @@ public abstract class MvpBaseRecyclerFragment<T, A extends CoreAdapter<T>, V ext
 
             @Override
             public void onRefresh(@NonNull RefreshLayout refreshLayout) {
-                page = 0;
+                page = 1;
                 refreshOrLoadMore();
             }
         });
@@ -79,7 +79,7 @@ public abstract class MvpBaseRecyclerFragment<T, A extends CoreAdapter<T>, V ext
 
     @Override
     public void onRefreshData(int page, List<T> data) {
-        if (page == 0) {
+        if (page == 1) {
             if (data.size() == 0 && adapter.getItemCount() == 0) {
                 empty.setVisibility(View.VISIBLE);
                 refreshLayout.setVisibility(View.GONE);
@@ -98,7 +98,7 @@ public abstract class MvpBaseRecyclerFragment<T, A extends CoreAdapter<T>, V ext
 
     private void refreshOrLoadMore() {
         getPresenter().requestPageData(page);
-        if (page == 0) {
+        if (page == 1) {
             refreshLayout.finishRefresh(setTimeOut());
         } else {
             refreshLayout.finishLoadMore(setTimeOut());

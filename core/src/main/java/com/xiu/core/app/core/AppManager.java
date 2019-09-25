@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Context;
 
-import com.xiu.core.utils.LogUtil;
+import com.xiu.utils.LogUtil;
 
 import java.util.List;
 import java.util.Stack;

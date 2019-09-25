@@ -6,7 +6,7 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.view.View;
 
-import com.xiu.core.utils.UIUtil;
+import com.xiu.utils.UIUtil;
 import com.xiu.core.view.magicindicator.buildins.commonnavigator.abs.IMeasurablePagerTitleView;
 
 

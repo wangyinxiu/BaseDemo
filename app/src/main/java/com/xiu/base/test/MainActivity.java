@@ -8,11 +8,10 @@ import com.xiu.base.R;
 import com.xiu.core.app.core.CoreActivity;
 import com.xiu.core.app.dialog.AppAlertDialog;
 import com.xiu.core.app.dialog.AppToastDialog;
-import com.xiu.core.utils.FileUtil;
-import com.xiu.core.utils.LogUtil;
-import com.xiu.core.utils.SPCache;
-import com.xiu.network.bean.response.Information;
-import com.xiu.network.datamodel.DemoDataModel;
+import com.xiu.data.bean.response.Information;
+import com.xiu.data.core.DataManager;
+import com.xiu.utils.FileUtil;
+import com.xiu.utils.LogUtil;
 
 import java.util.List;
 
@@ -25,6 +24,7 @@ public class MainActivity extends CoreActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setBackgroundRes(R.color.white);
+        DataManager.getInstance().startDataService(this);
     }
 
     @Override
@@ -32,7 +32,7 @@ public class MainActivity extends CoreActivity {
         super.onUIContentChanged();
 
         getViewCache().getView(R.id.test_net_request).setOnClickListener(v -> {
-            DemoDataModel.requestInformation(0, new DisposableObserver<List<Information>>() {
+            DataManager.getDataService().requestInformation(0, new DisposableObserver<List<Information>>() {
                 @Override
                 public void onNext(List<Information> information) {
 
@@ -40,14 +40,15 @@ public class MainActivity extends CoreActivity {
 
                 @Override
                 public void onError(Throwable e) {
-
+                    LogUtil.o(e);
                 }
 
                 @Override
                 public void onComplete() {
-
+                    LogUtil.i(TAG,"onComplete");
                 }
             });
+
         });
 
         getViewCache().getView(R.id.clear_image_cache).setOnClickListener(v -> {
@@ -55,19 +56,15 @@ public class MainActivity extends CoreActivity {
         });
 
         getViewCache().getView(R.id.clear_string_to_sp_cache).setOnClickListener(v -> {
-            SPCache.clearUserCache();
-            String result = SPCache.get("ssss", "default");
-            LogUtil.i(TAG, "result == " + result);
+
+
         });
 
         getViewCache().getView(R.id.get_string_to_sp_cache).setOnClickListener(v -> {
-            int result = SPCache.get(SPCache.Key.KEY_TOKEN, 888);
-            LogUtil.i(TAG, "result == " + result);
+
         });
 
         getViewCache().getView(R.id.put_string_to_sp_cache).setOnClickListener(v -> {
-            boolean result = SPCache.put(SPCache.Key.KEY_TOKEN, 124);
-            LogUtil.i(TAG, "result == " + result);
         });
 
         getViewCache().getView(R.id.btn_test_recycler_activity).setOnClickListener(v -> {

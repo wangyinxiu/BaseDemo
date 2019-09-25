@@ -9,7 +9,7 @@ import android.view.animation.AccelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 import android.view.animation.Interpolator;
 
-import com.xiu.core.utils.UIUtil;
+import com.xiu.utils.UIUtil;
 import com.xiu.core.view.magicindicator.FragmentContainerHelper;
 import com.xiu.core.view.magicindicator.buildins.ArgbEvaluatorHolder;
 import com.xiu.core.view.magicindicator.buildins.commonnavigator.abs.IPagerIndicator;

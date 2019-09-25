@@ -7,7 +7,7 @@ import android.support.v7.widget.AppCompatTextView;
 import android.text.TextUtils;
 import android.view.Gravity;
 
-import com.xiu.core.utils.UIUtil;
+import com.xiu.utils.UIUtil;
 import com.xiu.core.view.magicindicator.buildins.commonnavigator.abs.IMeasurablePagerTitleView;
 
 

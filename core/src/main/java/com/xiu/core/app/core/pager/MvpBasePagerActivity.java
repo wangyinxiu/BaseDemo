@@ -10,7 +10,7 @@ import android.view.animation.DecelerateInterpolator;
 import com.xiu.core.R;
 import com.xiu.core.app.adapter.CorePagerAdapter;
 import com.xiu.core.app.mvp.MvpActivity;
-import com.xiu.core.utils.UIUtil;
+import com.xiu.utils.UIUtil;
 import com.xiu.core.view.magicindicator.MagicIndicator;
 import com.xiu.core.view.magicindicator.ViewPagerHelper;
 import com.xiu.core.view.magicindicator.buildins.commonnavigator.CommonNavigator;

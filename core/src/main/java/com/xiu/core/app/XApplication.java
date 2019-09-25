@@ -8,8 +8,8 @@ import android.os.Environment;
 import com.squareup.picasso.Picasso;
 import com.xiu.core.BuildConfig;
 import com.xiu.core.app.core.AppManager;
-import com.xiu.core.utils.FileUtil;
-import com.xiu.core.utils.LogUtil;
+import com.xiu.utils.FileUtil;
+import com.xiu.utils.LogUtil;
 
 import java.io.File;
 
@@ -35,7 +35,6 @@ public class XApplication extends Application {
         builder.memoryCache(new com.squareup.picasso.Cache() {
             @Override
             public Bitmap get(String key) {
-                LogUtil.i(TAG, "get key == " + key);
                 String name = FileUtil.getFileName(key);
                 String path = FileUtil.getImageCache().getAbsolutePath() + File.separator + name;
                 File file = new File(path);
@@ -49,7 +48,6 @@ public class XApplication extends Application {
             public void set(String key, Bitmap bitmap) {
                 FileUtil.saveBitmap(bitmap, new File(FileUtil.getImageCache(),
                         FileUtil.getFileName(key)));
-                LogUtil.i(TAG, "set key == " + key);
             }
 
             @Override
@@ -78,5 +76,6 @@ public class XApplication extends Application {
         Picasso picasso = builder.build();
         Picasso.setSingletonInstance(picasso);
     }
+
 
 }

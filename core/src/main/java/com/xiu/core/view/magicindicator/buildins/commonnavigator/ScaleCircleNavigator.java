@@ -12,7 +12,7 @@ import android.view.ViewConfiguration;
 import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
 
-import com.xiu.core.utils.UIUtil;
+import com.xiu.utils.UIUtil;
 import com.xiu.core.view.magicindicator.NavigatorHelper;
 import com.xiu.core.view.magicindicator.abs.IPagerNavigator;
 import com.xiu.core.view.magicindicator.buildins.ArgbEvaluatorHolder;

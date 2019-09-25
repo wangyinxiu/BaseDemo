@@ -15,7 +15,7 @@ import android.widget.TextView;
 import com.squareup.picasso.Picasso;
 import com.xiu.core.R;
 import com.xiu.core.compat.ViewCache;
-import com.xiu.core.utils.UIUtil;
+import com.xiu.utils.UIUtil;
 
 public class CoreActivity extends AppCompatActivity {
 
