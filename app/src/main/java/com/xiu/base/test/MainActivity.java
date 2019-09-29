@@ -5,14 +5,17 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 import com.xiu.base.R;
+import com.xiu.core.app.adapter.CoreAdapter;
 import com.xiu.core.app.core.CoreActivity;
 import com.xiu.core.app.dialog.AppAlertDialog;
 import com.xiu.core.app.dialog.AppToastDialog;
+import com.xiu.core.view.CoreRecyclerView;
 import com.xiu.data.bean.response.Information;
 import com.xiu.data.core.DataManager;
 import com.xiu.utils.FileUtil;
 import com.xiu.utils.LogUtil;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import io.reactivex.observers.DisposableObserver;
@@ -25,6 +28,24 @@ public class MainActivity extends CoreActivity {
         setContentView(R.layout.activity_main);
         setBackgroundRes(R.color.white);
         DataManager.getInstance().startDataService(this);
+
+
+        CoreRecyclerView coreRecyclerView = getViewCache().getView(R.id.core_recycler);
+        coreRecyclerView.setConfig(new CoreRecyclerView.CoreRecyclerConfig<TestEntity>(coreRecyclerView) {
+            @Override
+            protected CoreAdapter<TestEntity> createRecyclerAdapter() {
+                return new TestCoreAdapter(getCoreActivity());
+            }
+
+            @Override
+            public void requestPageData(int page) {
+                List<TestEntity> data = new ArrayList<>();
+                for (int i = 0; i < 10; i++) {
+                    data.add(new TestEntity("aaa" + i));
+                }
+                onRefreshData(page, data);
+            }
+        });
     }
 
     @Override
@@ -45,7 +66,7 @@ public class MainActivity extends CoreActivity {
 
                 @Override
                 public void onComplete() {
-                    LogUtil.i(TAG,"onComplete");
+                    LogUtil.i(TAG, "onComplete");
                 }
             });
 
